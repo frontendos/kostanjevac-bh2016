@@ -1,0 +1,153 @@
+/* Defines how the width and height of the element are calculated: whether they include the padding and borders or not. */
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+
+/**UTILITY**/
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
+.bg--green {
+	background-color: rgba(2, 211, 0, 0.2);
+}
+.bg--red {
+	background-color: rgba(211, 11, 0, 0.2);
+}
+
+/**CLEARFIX**/
+.clear {
+	clear: both;
+}
+
+
+/**TYPO**/
+html {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Open Sans";
+	font-weight: 400;
+}
+button, .button {
+	font-family: "Roboto";
+	font-style: normal;
+  	font-weight: 300;
+}
+
+
+/**GRD**/
+.grid--12 {
+	width: 100%;
+}
+.grid--9 {
+	width: 80%;
+}
+.grid--6 {
+	width: 49%;
+}
+.grid--3 {
+	width: 25%;
+}
+
+
+/**TITLE**/
+.title--main {
+	text-align: center;
+	font-size: 3rem;
+	line-height: 4.5rem;
+	padding-top: 10%;
+	margin: 0 auto;
+	color: white;
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+/**BUTTONS*/
+.button--home {
+	text-align: center;
+	padding: 1rem 3rem;
+	background-color: #0072D3;
+	color: white;
+	margin: 2rem auto;
+	display: block;
+	clear: both;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+
+/**HERO**/
+.hero--img {
+	background-image: url(../img/hero-2.jpg);
+	background-size: cover;
+}
+.hero--main {
+	text-align: center;
+}
+.main--home {
+	text-align: center;
+}
+
+
+
+
+/**VOTING**/
+
+.person--wrapper {
+	float: left;
+	text-align: center;
+	padding-top: 10%;
+	height: 100vh;
+}
+.person--wrapper__border {
+	border-left: 2px solid #FFFFFF;
+}
+.person--image {
+	width: 200px;
+	border-radius: 100px;
+}
+.person--name {
+	font-size: 2.2rem;
+	line-height: 4rem;
+	margin: 2rem auto;
+	color: white;
+}
+
+.person--vote {
+	text-align: center;
+	padding: 1rem 3rem;
+	color: white;
+	background-color: none;
+	margin: 2rem;
+	clear: both;
+	cursor: pointer;
+  	font-weight: 300;
+  	border: 1px solid white;
+}
+.person--wrapper:hover .person--vote {
+	background-color: rgba(2, 211, 0, 0.5);
+  	border: 1px solid #02D300;
+}
+.person--results {
+	display: none;
+	font-size: 120px;
+	font-weight: 300;
+	color: white;
+}
+
+@media screen and (max-width: 600px) {
+	.grid-medium--12 {
+		width: 100%;
+	}
+}
